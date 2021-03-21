@@ -17,3 +17,6 @@
 二、实现方法
 
 基于C++语言，利用OpenCV实现图像处理、Qt实现图形用户界面、VTK实现三维体重建。
+
+利用Qt中的QtConcurrent::run(QThreadPool *pool, Function function, ...)  
+实现多线程并发，在单独的线程中运行function。线程是从QThreadPool池中获取的。注意，函数可能不会立即运行;函数只在线程可用时运行。
